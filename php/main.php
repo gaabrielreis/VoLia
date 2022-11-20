@@ -20,7 +20,7 @@ error_reporting(E_ALL);
 ini_set('default_charset','UTF-8');
 
 $Index = 0;
-$sql = "SELECT * FROM `mesa` WHERE 1 = 1;";
+$sql = "SELECT * FROM `mesa` WHERE 1 = 1 Order By `Id` ASC;";
 $query = mysqli_query($con,$sql);
 
 if ($query){
